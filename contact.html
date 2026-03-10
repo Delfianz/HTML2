@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">Back</a>
+        <a href="./portofolio.html">Portofolio</a>
+      </nav>
+    </header>
+    <ul><p><b>Informasi Kontak</b></p>
+        <li>Email : anggadelfiana19@gmail.com</li>
+        <li>Telepon : 081237599831</li>
+        <li>Alamat : Jln Kacapiring No 17a RT/RW : 02/02 Kel/Kec : Kacapiring/Batununggal</li>
+    </ul>
+    <section class="contact">
+        <h2>Masukkan Kontak Kamu</h2> 
+    <form>
+        <!-- Text Input -->
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required/>
+    
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="contoh@email.com" required/>
+    
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required/>
+
+        <!-- Subject Input -->
+        <label for="Subject">Subject:</label>
+        <input type="subject" id="subject" name="subject" placeholder="Masukkan subject" required/>
+
+        <!-- Textarea -->
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="1" cols="25" placeholder="Tulis pesan..."></textarea>
+    
+    <form action="/submit" method="POST">
+        <!-- Elemen form di sini -->
+        <button type="submit">Kirim</button>
+    </form>
+    </section>
+    <footer>
+        <p>&copy; 2026 Website Erlangga. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
