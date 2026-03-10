@@ -1,0 +1,64 @@
+<!-- Kode BERMASALAH - perbaiki semua kesalahan aksesibilitas -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+    <text y='.9em' font-size='90'>🛒</text>
+    </svg>">
+</head>
+<body>
+<header>
+    <div>
+        <!-- Masalah 3: Navigasi tidak menggunakan tag semantic yang tepat -->
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/kontak">Kontak</a>
+    </div>
+</header>
+    <div>
+        <!-- Masalah 4: Heading tidak berurutan -->
+        <h1>Artikel Terbaru</h1>
+
+        <div>
+            <!-- Masalah 5: Gambar tanpa alt text -->
+            <img src="artikel1.jpg" alt="Gambar sesuatu" />
+            <h5>Judul Artikel 1</h5>
+            <p>Deskripsi artikel 1...</p>
+            <!-- Masalah 6: Div digunakan sebagai tombol -->
+            <a href="bacaLebih(1).html">Baca Selengkapnya</a>
+        </div>
+
+        <div>
+            <img src="artikel2.jpg" alt="gambar" />
+            <h5>Judul Artikel 2</h5>
+            <p>Deskripsi artikel 2...</p>
+            <a href="bacaLebih(2).html">Baca Selengkapnya</a>
+        </div>
+    </div>
+
+  
+
+
+        <!-- Masalah 7: Form tanpa label yang terhubung -->
+<h3>Berlangganan Newsletter</h3>
+<form action="/submit" method="POST"></form>
+    <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="contoh@email.com" />
+
+            <button type="daftar">Daftar</button>
+
+    </form>
+
+
+<footer>Hak Cipta 2025</footer>
+
+        
+
+
+</body>
+</html>

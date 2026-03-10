@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Kursus Online</title>
+</head>
+<body>
+    <h1>Form Pendaftaran Kursus Online</h1>
+
+    <form action="/daftar" method="POST">
+
+    <fieldset>
+        <legend>Data Diri</legend>
+
+        <div>
+            <label for="nama">Nama Lengkap: </label>
+            <input type="text" id="nama" name="nama" required />
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+            <label for="tel">No Telepon:</label>
+            <input 
+                type="tel" 
+                id="tel" 
+                name="tel" 
+                placeholder="08xxxxxxxxxx"
+                pattern="[0-9]{10,13}"
+                required
+            />
+        </div>
+        <div>
+            <label for="ttl">Tanggal Lahir:</label>
+            <input type="date" id="ttl" name="ttl" required />
+        </div>
+
+    </fieldset>
+
+
+
+</form>
+
+<fieldset>
+    <legend>Pilihan Kursus</legend>
+<label for="kursus">Pilih Kursus:</label>
+<select id="kursus" name="kursus">
+
+
+    <optgroup label="Memasak">
+        <option value="Baking & Pastry">Baking & Pastry</option>
+        <option value="Culinary Arts">Culinary Arts</option>
+        <option value="Beverages">Beverages</option>
+    </optgroup>
+
+    <optgroup label="Pemrograman">
+        <option value="python">Python</option>
+        <option value="php">PHP</option>
+        <option value="nodejs">Node.js</option>
+        <option value="java">Java</option>
+    </optgroup>
+
+    <optgroup label="Bahasa">
+        <option value="Jerman">Jerman</option>
+        <option value="Rusia">Rusia</option>
+        <option value="Arab">Arab</option>
+    </optgroup>
+</select>
+</fieldset>
+
+<label for="kota">Kota Asal:</label>
+<input type="text" id="kota" name="kota" list="daftar-kota" placeholder="Ketik nama kota..." />
+
+<datalist id="daftar-kota">
+    <option value="Jakarta" />
+    <option value="Bandung" />
+    <option value="Surabaya" />
+    <option value="Yogyakarta" />
+    <option value="Medan" />
+    <option value="Makassar" />
+    <option value="Semarang" />
+    <option value="Palembang" />
+    <option value="Denpasar" />
+    <option value="Jayapura" />
+</datalist>
+
+<div>
+    <p>Metode Belajar:</p>
+    <input type="radio" id="online" name="metode" value="online">
+    <label for="online">Online</label>
+
+    <input type="radio" id="offline" name="metode" value="offline">
+    <label for="offline">Offline</label>
+
+    <input type="radio" id="hybrid" name="metode" value="hybrid">
+    <label for="hybrid">Hybrid</label>
+
+</div>
+
+<fieldset>
+    <legend>Skill yang Sudah Dikuasai</legend>
+
+    <input type="checkbox" id="html" name="skill" value="html">
+    <label for="html">HTML</label><br>
+
+    <input type="checkbox" id="css" name="skill" value="css">
+    <label for="css">CSS</label><br>
+
+    <input type="checkbox" id="javascript" name="skill" value="javascript">
+    <label for="javascript">JavaScript</label><br>
+
+    <input type="checkbox" id="python" name="skill" value="python">
+    <label for="python">Python</label><br>
+
+    <input type="checkbox" id="java" name="skill" value="java">
+    <label for="java">Java</label>
+
+</fieldset>
+
+<label for="tingkat">Tingkat Pengalaman:</label>
+<select id="tingkat" name="tingkat">
+    
+
+    <optgroup label="">
+        <option value="pemula">Pemula</option>
+        <option value="menengah">Menengah</option>
+        <option value="mahir">Mahir</option>
+    </optgroup>
+
+</select>
+
+<!-- Textarea -->
+<label for="tujuan">Ceritakan tujuan belajar kamu:</label>
+<textarea id="tujuan" name="tujuan" rows="1" cols="50" placeholder="Tulis tujuan belajar..."></textarea>
+
+
+<fieldset>
+    <legend>Upload Dokumen</legend>
+<!-- Foto Upload -->
+<label for="berkas">Upload File:</label>
+<input type="file" id="berkas" name="berkas" accept=".png,.jpg" />
+
+<!-- File Upload -->
+<label for="berkas">Upload File:</label>
+<input type="file" id="berkas" name="berkas" accept=".pdf" />
+</fieldset>
+
+<!-- Checkbox -->
+<input type="checkbox" id="setuju" name="setuju" />
+<label for="setuju">Saya setuju dengan syarat dan ketentuan</label>
+
+
+
+    </form>
+</body>
+</html>
